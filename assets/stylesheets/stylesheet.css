@@ -1,0 +1,274 @@
+@import 'https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap'; html {
+    cursor: url('../others/cursor.png'), default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+a {
+    color: #e4e3e3;
+    text-decoration: none;
+}
+
+.kill-feed {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.kill-feed>div {
+    padding: 3px 6px 3px 6px;
+    margin: 0;
+    display: inline-block;
+    float: right;
+    clear: both;
+    border: 2px #fff solid;
+    line-height: 18px;
+    font-size: 15px;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: right;
+    border-radius: 4px;
+    background: rgba(0,0,0,0.75);
+    margin-bottom: 6px;
+}
+
+.kill-feed div span {
+    vertical-align: middle;
+}
+
+.kill-feed div span.weapons>img {
+    border: none;
+    outline: none;
+    vertical-align: middle;
+    margin: 0px 3px;
+}
+
+.kill-feed div>span.player {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 2px;
+}
+
+.kill-feed div>span.player.ct {
+    color: #fff;
+    padding-left: 2px;
+}
+
+.kill-feed div>span.player.t {
+    color: #fff;
+    padding-right: 4px;
+}
+
+.multipoint {
+    display: none;
+}
+
+.multipoint#point-8 {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.multipoint#point-8>img {
+    opacity: 0.5;
+}
+
+.social img {
+    z-index: 2;
+    height: 50px;
+    color: #fff;
+    padding: 10px 15px;
+    flex-direction: row;
+    transition: ease-out .1s
+}
+
+.social img:hover {
+    transform: scale(1.07);
+    transition: ease-in .1s
+}
+
+.social {
+    text-align: center;
+    padding: 20px 5px;
+    flex-direction: column;
+    background-position: center
+}
+
+.social img {
+    padding: 20px 15px
+}
+
+.noise {
+    z-index: 1
+}
+
+.fixed-fluid {
+    top: 0;
+    left: 0;
+    opacity: .12;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    pointer-events: none
+}
+
+body, input {
+    color: #e4e3e3;
+    background-color: #000;
+}
+
+@font-face {
+    font-family: courier_regular;
+    src: url('../others/Consolas.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: poppins, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+input {
+    outline: 0;
+    border: none;
+}
+
+td {
+    padding: 3px;
+}
+
+hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-style: dashed;
+}
+
+pre {
+    font-size: 1.15em;
+}
+
+.box, body, input {
+    background-color: #000;
+}
+
+.box {
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.top-right {
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-family: poppins,sans-serif;
+    z-index: 1
+}
+
+.container {
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#brand {
+    margin-left: 0.65pc;
+}
+
+.marquee-container {
+    position: absolute;
+    width: 100%;
+    bottom: 10%;
+    text-align: center;
+}
+
+#marquee {
+    width: 420px;
+    overflow: hidden;
+    display: inline-block;
+    margin-bottom: -4.5px;
+    font-size: 15px;
+}
+
+.emoticon {
+    vertical-align: middle;
+}
+
+.main {
+    overflow: hidden;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -3;
+}
+
+#pattern {
+    background: transparent url('../others/dot.png') repeat 0 0;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+    opacity: 1;
+}
+
+#pattern, #background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#background {
+    z-index: -2;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 135%;
+    min-height: 110%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    overflow: hidden;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+}
+
+.rose-light {
+    -webkit-filter: invert(100%);
+    -moz-filter: invert(100%);
+    -ms-filter: invert(100%);
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}

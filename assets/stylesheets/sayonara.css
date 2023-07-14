@@ -1,0 +1,78 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro'); @import url('https://fonts.googleapis.com/css?family=Poppins'); h5 {
+    letter-spacing: 2px;
+    font-size: 4em;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border: none;
+    color: rgb(237, 234, 234);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    letter-spacing: 3px;
+    text-shadow: 1px 0 1px rgb(64,64,64) , 2px 2px 1px rgb(240,239,200);
+    transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    -o-transition: all 0.25s;
+}
+
+h6 {
+    letter-spacing: 2px;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border: none;
+    color: rgb(237, 234, 234);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    letter-spacing: 3px;
+    transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    -o-transition: all 0.25s;
+}
+
+.skip {
+    transition: 0.5s;
+}
+
+.skip:hover {
+    opacity: 0.3;
+}
+
+/* Generated animations*/
+.text-focus-in {
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}

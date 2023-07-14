@@ -1,0 +1,41 @@
+::selection {
+    color: #050505;
+    background: #b987ff;
+}
+
+::-moz-selection {
+    color: #050505;
+    background: #b987ff;
+}
+
+body {
+    background: #0f0f0f;
+    position: relative;
+}
+
+body::after {
+    content: "";
+    background: #FFFFFF;
+    text-align: right;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 3px;
+    animation: bar 2s ease-in-out;
+}
+
+@keyframes bar {
+    0% {
+        left: 0;
+        width: 0%;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
